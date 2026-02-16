@@ -1,0 +1,109 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #141e30, #243b55);
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: 
+    linear-gradient(to right, rgba(31,64,55,0.7), rgba(153,242,200,0.3), rgba(0,210,255,0.4)),
+    url('cyber-bg.jpg');
+  background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.report-container {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 600px;
+  color: #ffffff;
+}
+
+
+
+.sub :hover{
+ transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+  
+}
+
+.sub {
+  display: inline-block; /* or block */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+
+.report-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #00bcd4;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
+  outline: none;
+  /* #ffffff */
+}
+
+.input-group input::placeholder,
+textarea::placeholder {
+  color: #ccc;
+}
+
+.input-group textarea {
+  resize: vertical;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.checkbox-group input {
+  margin-right: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #00bcd4;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0097a7;
+}

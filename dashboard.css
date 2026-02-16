@@ -1,0 +1,13 @@
+body{
+    background: linear-gradient(to right, #141e30, #243b55);
+    padding: 20px;
+    color: aliceblue;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+
+.dash{
+    /* justify-content: center; */
+    align-items: center;
+}

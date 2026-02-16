@@ -1,0 +1,57 @@
+/* General Page Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7fb;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Headings */
+h1 {
+  font-size: 2.2rem;
+  color: #243b55;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 25px;
+  color: #141e30;
+}
+
+/* Lists */
+ul {
+  margin: 10px 0 20px 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Footer Note */
+.footer-note {
+  margin-top: 40px;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.footer-note a {
+  color: #243b55;
+  text-decoration: none;
+}
+
+.footer-note a:hover {
+  text-decoration: underline;
+}

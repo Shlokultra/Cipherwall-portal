@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - CipherWall Portal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="register.css" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+  <!-- Bootstrap Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">🛡️ CipherWall </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Login.html">Login</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="Report.html">Report</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Registration Form -->
+  <div class="register-container">
+    <h2>Create an Account</h2>
+    <form action="register.php" method="POST">
+      <div class="input-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="input-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="input-group">
+        <label for="mobile">Mobile Number</label>
+        <input type="tel" id="mobile" name="mobile" required />
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+      </div>
+      <div class="input-group">
+        <label for="confirm_password">Confirm Password</label>
+        <input type="password" id="confirm_password" name="confirm_password" required />
+      </div>
+      <div class="input-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" />
+      </div>
+      <div class="input-group">
+        <label for="security_question">Security Question</label>
+        <select id="security_question" name="security_question">
+          <option value="">Select a question</option>
+          <option value="pet">What is your pet's name?</option>
+          <option value="school">What is your school name?</option>
+          <option value="city">In which city were you born?</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="security_answer">Security Answer</label>
+        <input type="text" id="security_answer" name="security_answer" required />
+      </div>
+      <div class="checkbox-group">
+        <label>
+          <input type="checkbox" required name="agree_terms" />
+          I agree to the Terms & Privacy Policy <br>
+          <a href="terms.html">Terms of service</a><br>
+          <a href="privacy.html">Privacy policies</a>
+        </label>
+      </div>
+      <div class="g-recaptcha" data-sitekey="6LcSA5krAAAAAAZeyDmcPojsod5KRkb1_G0gwYeI"></div><br>
+      <button type="submit" name="submit" class="btn-animated">Register</button>
+      <p class="login-link">Already have an account? <a href="Login.html">Login here</a></p>
+      <p class="homepagelink"><a href="index.html">Go back to home page</a></p>
+    </form>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Button bounce animation
+    document.querySelectorAll('.btn-animated').forEach(btn => {
+      btn.addEventListener('mouseenter', function () {
+        this.classList.add('bounce');
+      });
+      btn.addEventListener('animationend', function () {
+        this.classList.remove('bounce');
+      });
+    });
+
+    // Input glow effect
+    document.querySelectorAll('.input-group input, .input-group select').forEach(input => {
+      input.addEventListener('focus', function () {
+        this.classList.add('glow');
+      });
+      input.addEventListener('blur', function () {
+        this.classList.remove('glow');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Test your cybersecurity knowledge with our interactive quiz on CipherWall." />
+  <meta name="keywords" content="cybersecurity quiz, phishing test, digital safety quiz" />
+  <title>Cybersecurity Quiz - CipherWall</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="Learn.css" />
+  <style>
+    ::selection {
+      background-color: #1f2e4a;
+      color: #fff;
+    }
+    .quiz-question { margin-bottom: 20px; }
+    .quiz-options { display: flex; gap: 10px; flex-wrap: wrap; }
+    .quiz-result { margin-top: 20px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <!-- Bootstrap Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Back to Home">🛡️ CipherWall</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="Learn.html">Learn</a></li>
+          <li class="nav-item"><a class="nav-link" href="Report.html">Report</a></li>
+        </ul>
+        <form class="d-flex ms-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search tips..." aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <br><br><br>
+  <div class="awareness-container">
+    <h1 class="hidden">Cybersecurity Quiz</h1>
+    <p class="intro hidden">Test your knowledge and learn more about staying safe online!</p>
+
+    <div class="quiz-container hidden">
+      <div class="quiz-question">
+        <h3>Question 1: What should you do if you receive a suspicious email?</h3>
+        <div class="quiz-options">
+          <button class="btn btn-outline-success" onclick="checkAnswer(1, true)">Delete it immediately</button>
+          <button class="btn btn-outline-success" onclick="checkAnswer(1, false)">Click the link</button>
+        </div>
+      </div>
+      <div class="quiz-result" id="result1"></div>
+
+      <div class="quiz-question">
+        <h3>Question 2: Which of these is a strong password?</h3>
+        <div class="quiz-options">
+          <button class="btn btn-outline-success" onclick="checkAnswer(2, true)">P@ssw0rd123!</button>
+          <button class="btn btn-outline-success" onclick="checkAnswer(2, false)">password</button>
+        </div>
+      </div>
+      <div class="quiz-result" id="result2"></div>
+
+      <div class="quiz-question">
+        <h3>Question 3: Should you share your OTP with anyone?</h3>
+        <div class="quiz-options">
+          <button class="btn btn-outline-success" onclick="checkAnswer(3, false)">Yes</button>
+          <button class="btn btn-outline-success" onclick="checkAnswer(3, true)">No</button>
+        </div>
+      </div>
+      <div class="quiz-result" id="result3"></div>
+
+      <div class="quiz-question">
+        <h3>Question 4: What does HTTPS stand for?</h3>
+        <div class="quiz-options">
+          <button class="btn btn-outline-success" onclick="checkAnswer(4, true)">HyperText Transfer Protocol Secure</button>
+          <button class="btn btn-outline-success" onclick="checkAnswer(4, false)">HyperText Transfer Protocol Standard</button>
+        </div>
+      </div>
+      <div class="quiz-result" id="result4"></div>
+
+      <div class="quiz-question">
+        <h3>Question 5: What is phishing?</h3>
+        <div class="quiz-options">
+          <button class="btn btn-outline-success" onclick="checkAnswer(5, true)">A scam to steal personal information</button>
+          <button class="btn btn-outline-success" onclick="checkAnswer(5, false)">A type of fish</button>
+        </div>
+      </div>
+      <div class="quiz-result" id="result5"></div>
+
+      <div class="quiz-question">
+        <h3>Question 6: Why should you use a VPN on public Wi-Fi?</h3>
+        <div class="quiz-options">
+          <button class="btn btn-outline-success" onclick="checkAnswer(6, true)">To encrypt your data</button>
+          <button class="btn btn-outline-success" onclick="checkAnswer(6, false)">To speed up your connection</button>
+        </div>
+      </div>
+      <div class="quiz-result" id="result6"></div>
+
+      <div class="quiz-question">
+        <h3>Question 7: What is malware?</h3>
+        <div class="quiz-options">
+          <button class="btn btn-outline-success" onclick="checkAnswer(7, true)">Malicious software</button>
+          <button class="btn btn-outline-success" onclick="checkAnswer(7, false)">A type of hardware</button>
+        </div>
+      </div>
+      <div class="quiz-result" id="result7"></div>
+
+      <div class="quiz-question">
+        <h3>Question 8: What does 2FA stand for?</h3>
+        <div class="quiz-options">
+          <button class="btn btn-outline-success" onclick="checkAnswer(8, true)">Two-Factor Authentication</button>
+          <button class="btn btn-outline-success" onclick="checkAnswer(8, false)">Two-Factor Access</button>
+        </div>
+      </div>
+      <div class="quiz-result" id="result8"></div>
+
+      <div class="quiz-question">
+        <h3>Question 9: Should you download apps from unknown sources?</h3>
+        <div class="quiz-options">
+          <button class="btn btn-outline-success" onclick="checkAnswer(9, false)">Yes</button>
+          <button class="btn btn-outline-success" onclick="checkAnswer(9, true)">No</button>
+        </div>
+      </div>
+      <div class="quiz-result" id="result9"></div>
+
+      <div class="quiz-question">
+        <h3>Question 10: What is ransomware?</h3>
+        <div class="quiz-options">
+          <button class="btn btn-outline-success" onclick="checkAnswer(10, true)">Software that locks your files</button>
+          <button class="btn btn-outline-success" onclick="checkAnswer(10, false)">A type of antivirus</button>
+        </div>
+      </div>
+      <div class="quiz-result" id="result10"></div>
+
+      <div class="quiz-question">
+        <h3>Question 11: Why is it important to update software?</h3>
+        <div class="quiz-options">
+          <button class="btn btn-outline-success" onclick="checkAnswer(11, true)">To fix security vulnerabilities</button>
+          <button class="btn btn-outline-success" onclick="checkAnswer(11, false)">To add new features only</button>
+        </div>
+      </div>
+      <div class="quiz-result" id="result11"></div>
+
+      <div class="quiz-question">
+        <h3>Question 12: What should you do if your account is hacked?</h3>
+        <div class="quiz-options">
+          <button class="btn btn-outline-success" onclick="checkAnswer(12, true)">Change password and notify the service</button>
+          <button class="btn btn-outline-success" onclick="checkAnswer(12, false)">Ignore it</button>
+        </div>
+      </div>
+      <div class="quiz-result" id="result12"></div>
+
+      <div class="quiz-question">
+        <h3>Question 13: Is it safe to use the same password for multiple accounts?</h3>
+        <div class="quiz-options">
+          <button class="btn btn-outline-success" onclick="checkAnswer(13, false)">Yes</button>
+          <button class="btn btn-outline-success" onclick="checkAnswer(13, true)">No</button>
+        </div>
+      </div>
+      <div class="quiz-result" id="result13"></div>
+
+      <div class="quiz-question">
+        <h3>Question 14: What is social engineering?</h3>
+        <div class="quiz-options">
+          <button class="btn btn-outline-success" onclick="checkAnswer(14, true)">Manipulating people to divulge info</button>
+          <button class="btn btn-outline-success" onclick="checkAnswer(14, false)">Building social networks</button>
+        </div>
+      </div>
+      <div class="quiz-result" id="result14"></div>
+
+      <div class="quiz-question">
+        <h3>Question 15: Should you verify website URLs before entering info?</h3>
+        <div class="quiz-options">
+          <button class="btn btn-outline-success" onclick="checkAnswer(15, true)">Yes</button>
+          <button class="btn btn-outline-success" onclick="checkAnswer(15, false)">No</button>
+        </div>
+      </div>
+      <div class="quiz-result" id="result15"></div>
+    </div>
+
+    <a href="Learn.html" class="btn btn-secondary mt-3">← Back to Learn</a>
+  </div>
+  <footer class="footer mt-5">
+    <div class="container text-center py-3">
+      &copy; 2025 CipherWall | Designed for India's Digital Safety Mission.
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Initialize tooltips
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+
+    // Functional search bar
+    document.querySelector('form[role="search"]').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const query = this.querySelector('input[type="search"]').value.toLowerCase();
+      const questions = document.querySelectorAll('.quiz-question');
+      questions.forEach(q => {
+        const text = q.textContent.toLowerCase();
+        q.style.display = text.includes(query) ? 'block' : 'none';
+      });
+      if (query === '') {
+        questions.forEach(q => q.style.display = 'block');
+      }
+    });
+
+    // Quiz functionality
+    function checkAnswer(question, isCorrect) {
+      const resultId = 'result' + question;
+      const resultDiv = document.getElementById(resultId);
+      if (isCorrect) {
+        resultDiv.innerHTML = '<span class="text-success">Correct! Well done.</span>';
+      } else {
+        resultDiv.innerHTML = '<span class="text-danger">Wrong! Remember to stay vigilant.</span>';
+      }
+    }
+
+    // Reveal animation
+    function revealOnScroll() {
+      const reveals = document.querySelectorAll('.hidden');
+      for (let i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const elementTop = reveals[i].getBoundingClientRect().top;
+        const elementVisible = 120;
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add('show');
+        } else {
+          reveals[i].classList.remove('show');
+        }
+      }
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('DOMContentLoaded', revealOnScroll);
+  </script>
+</body>
+</html>

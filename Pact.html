@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cyber Awareness</title>
+  <link rel="stylesheet" href="prac.css">
+</head>
+<body>
+
+  <!-- <nav>
+    <div class="logo">CyberSecure</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Report.html">Report</a></li>
+      <li><a href="Blacklist.html">Blacklist</a></li>
+      <li><a href="Learn.html">Learn</a></li>
+      <li><a href="Login.html">Login</a></li>
+      <li><a href="Register.html">Register</a></li>
+      <li><a href="Awareness.html" class="active">Awareness</a></li>
+    </ul>
+  </nav> -->
+
+  <header>
+    <h1>Cybersecurity Awareness</h1>
+    <p>Stay alert, stay secure: Learn how to protect yourself in the digital world.</p>
+  </header>
+
+  <section class="accordion-section">
+    <button class="accordion">🔐 What is Phishing?</button>
+    <div class="panel">
+      <p>Phishing is a cybercrime where attackers trick users into providing sensitive information via fake emails or websites.</p>
+    </div>
+
+    <button class="accordion">🛡️ Importance of Strong Passwords</button>
+    <div class="panel">
+      <p>Use unique, complex passwords and a password manager to stay protected.</p>
+    </div>
+
+    <button class="accordion">🎭 Social Engineering Threats</button>
+    <div class="panel">
+      <p>Attackers manipulate human behavior to access confidential info. Be cautious of unsolicited contact.</p>
+    </div>
+  </section>
+
+  <!-- <section class="video-section">
+    <h2>Watch: Cybersecurity Basics</h2>
+     <iframe width="560" height="315" 
+      src="https://www.youtube.com/embed/Sgs4K2eAZhg" 
+      title="Cyber Awareness" frameborder="0" 
+      allowfullscreen></iframe>
+  </section> -->
+
+  <section class="video-section">
+    <h2>Watch: Cybersecurity Basics</h2>
+     <iframe width="560" height="315" 
+      src="https://www.youtube.com/embed/e_CrzLvDHI8" 
+      title="Cyber Awareness" frameborder="0" 
+      allowfullscreen></iframe>
+  </section>
+
+  <section class="pdf-section">
+    <h2>Download PDF Guide</h2>
+    <a href="cyber_awareness.pdf" download class="pdf-btn">📥 Download Cybersecurity Guide</a>
+  </section>
+
+  <section class="cta-report">
+    <h3>Think you're a victim? <a href="Report.html">Report a Cyber Crime</a></h3>
+  </section>
+
+  <script>
+    const acc = document.getElementsByClassName("accordion");
+    for (let i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        panel.style.display = panel.style.display === "block" ? "none" : "block";
+      });
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn about cybersecurity: phishing, passwords, mobile safety, and more. Interactive quizzes and tips for digital protection." />
+  <meta name="keywords" content="cybersecurity tips, phishing, password security, mobile safety, digital identity" />
+  <title>Cyber Awareness - CipherWall Portal</title>
+  <link rel="stylesheet" href="Learn.css" />
+  <style>
+    ::selection {
+      background-color: #1f2e4a;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Bootstrap Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Back to Home">🛡️ CipherWall</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#" aria-current="page">Register</a></li>
+          <li class="nav-item"><a class="nav-link" href="Login.html">Login</a></li>
+        </ul>
+        <form class="d-flex ms-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search tips..." aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <br><br><br>
+  <div class="awareness-container">
+    <h1 class="hidden">Cybersecurity Awareness</h1>
+    <p class="intro hidden">Stay informed. Stay secure. Learn how to protect yourself online from real threats.</p>
+
+    <div class="card-grid">
+      <!-- Card 1 -->
+      <div class="card hidden">
+        <img src="phising1.png" class="card-img-top" alt="Illustration of phishing scam">
+        <div class="card-body">
+          <h2>🛑 Phishing Scams</h2>
+          <p>Phishing attacks trick users through fake emails and websites to steal personal data like passwords and bank info.
+            <br><br><b>Tip:</b> Don’t click on links from unknown sources. Always check the sender's address and site URL.
+          </p>
+          <a href="https://www.cisa.gov/news-events/news/protecting-yourself-phishing" class="card-link">Learn more</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card hidden">
+        <img src="pass1.png" class="card-img-top" alt="Password">
+        <div class="card-body">
+          <h2>🔐 Password Security</h2>
+          <p>Using weak or repeated passwords increases your risk of being hacked.
+            <br><br><b>Tip:</b> Use strong, unique passwords. Enable 2FA for all accounts.
+          </p>
+          <a href="https://www.cyber.gov.au/acsc/view-all-content/advice/creating-strong-passphrases" class="card-link">Learn more</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card hidden">
+        <img src="mob1.png" class="card-img-top" alt="Mobile">
+        <div class="card-body">
+          <h2>📱 Mobile Device Safety</h2>
+          <p>Public Wi-Fi and unknown apps can compromise your phone’s data.
+            <br><br><b>Tip:</b> Avoid using public Wi-Fi for banking. Install apps from trusted sources only.
+          </p>
+          <a href="https://us.norton.com/blog/mobile/how-to-protect-your-mobile-device" class="card-link">Learn more</a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card hidden">
+        <img src="soc1.png" class="card-img-top" alt="Social Engineering">
+        <div class="card-body">
+          <h2>🎣 Social Engineering</h2>
+          <p>Hackers may pose as trusted people or services to extract info.
+            <br><br><b>Tip:</b> Never share OTPs, bank details, or passwords—even if it seems like a trusted person is asking.
+          </p>
+          <a href="https://www.imperva.com/learn/application-security/social-engineering/" class="card-link">Learn more</a>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card hidden">
+        <img src="fak1.png" class="card-img-top" alt="Fake Websites">
+        <div class="card-body">
+          <h2>🧾 Fake Websites & Apps</h2>
+          <p>Cybercriminals create fake versions of banking or government sites.
+            <br><br><b>Tip:</b> Always verify website URLs, look for “https://” and avoid clicking unknown links.
+          </p>
+          <a href="https://consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams" class="card-link">Learn more</a>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card hidden">
+        <img src="ransom1.png" class="card-img-top" alt="Malware">
+        <div class="card-body">
+          <h2>🧑‍💻 Malware & Ransomware</h2>
+          <p>Malware can infect your system through malicious files or links. Ransomware locks your data and demands payment.
+            <br><br><b>Tip:</b> Keep antivirus software updated. Never download files from untrusted sources.
+          </p>
+          <a href="https://www.cisa.gov/news-events/news/stop-ransomware" class="card-link">Learn more</a>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="card hidden">
+        <img src="wifi1.png" class="card-img-top" alt="WiFi">
+        <div class="card-body">
+          <h2><i class="bi bi-wifi"></i>  Public Wi-Fi Dangers</h2>
+          <p>Hackers can intercept data on unsecured public networks and steal sensitive information.
+            <br><br><b>Tip:</b> Avoid logging into bank or email accounts on public Wi-Fi. Use a VPN.
+          </p>
+          <a href="https://www.kaspersky.com/resource-center/threats/public-wifi-risks" class="card-link">Learn more</a>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="card hidden">
+        <img src="datapri1.png" class="card-img-top" alt="Privacy">
+        <div class="card-body">
+          <h2>🔓 Data Privacy & Sharing</h2>
+          <p>Oversharing personal info online increases your risk of being targeted in scams or identity theft.
+            <br><br><b>Tip:</b> Limit what you post. Review app permissions and privacy settings regularly.
+          </p>
+          <a href="https://www.consumer.ftc.gov/articles/protecting-your-privacy-online" class="card-link">Learn</a>
+        </div>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="card hidden">
+        <img src="social.png" class="card-img-top" alt="Social Media">
+        <div class="card-body">
+          <h2>🧠 Social Media Awareness</h2>
+          <p>Cybercriminals can use your social media data to impersonate or manipulate you.
+            <br><br><b>Tip:</b> Keep profiles private and be cautious of friend requests from strangers.
+          </p>
+          <a href="https://www.cyber.gov.au/acsc/view-all-content/publications/social-media-protection" class="card-link">Learn more</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Articles Section -->
+    <h3 class="mb-3 hidden">Articles</h3>
+    <div class="row">
+      <div class="col-md-4 hidden">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Evolving Threats:</h5>
+            <p class="card-text">Cybercriminals are constantly developing new attack methods, including sophisticated phishing campaigns leveraging AI and deepfakes. </p>
+            <a href="articles/article1.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 hidden">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Ai in Cybersecurity:</h5>
+            <p class="card-text">Cybercriminals are constantly developing new attack methods, including sophisticated phishing campaigns leveraging AI and deepfakes. </p>
+            <a href="articles/ai-cybersecurity.html" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="mt-5 mb-3 hidden">Downloadable PDFs</h3>
+    <div class="row">
+      <div class="col-md-4 hidden">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Cybersecurity Awareness Guide</h5>
+            <p class="card-text">Download this pdf to get insights on cybersecurity awareness.</p>
+            <a href="/Pdf's/Cybersecurity_Awareness_Guide.pdf" class="btn btn-success" download>Download PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Simple Quiz Section -->
+    <h3 class="mt-5 mb-3 hidden">Quick Quiz: Test Your Knowledge</h3>
+    <div class="quiz-container hidden">
+      <p>Challenge yourself with our interactive quiz!</p>
+      <a href="quiz.html" class="btn btn-primary">Start Quiz</a>
+    </div>
+
+    <!-- Feedback Form -->
+    <h3 class="mt-5 mb-3 hidden">Feedback</h3>
+    <form class="feedback-form hidden" action="feedback.php" method="POST">
+      <div class="mb-3">
+        <label for="feedback" class="form-label">Share your thoughts:</label>
+        <textarea class="form-control" name="feedback_text" id="feedback" rows="3" placeholder="Your feedback here..." aria-label="Feedback textarea"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <!-- CTA -->
+    <div class="cta-box hidden">
+      <p>📢 Want to report a cybercrime? <a href="Report.html">Click here to file a report</a>.</p>
+    </div>
+  </div>
+  <footer class="footer mt-5">
+    <div class="container text-center py-3">
+      &copy; 2025 CipherWall | Designed for India's Digital Safety Mission.
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Initialize tooltips
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+
+    // Functional search bar
+    document.querySelector('form[role="search"]').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const query = this.querySelector('input[type="search"]').value.toLowerCase();
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        card.style.display = text.includes(query) ? 'block' : 'none';
+      });
+      if (query === '') {
+        cards.forEach(card => card.style.display = 'block');
+      }
+    });
+
+    // Existing reveal animation
+    function revealOnScroll() {
+      const reveals = document.querySelectorAll('.hidden');
+      for (let i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const elementTop = reveals[i].getBoundingClientRect().top;
+        const elementVisible = 120;
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add('show');
+        } else {
+          reveals[i].classList.remove('show');
+        }
+      }
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('DOMContentLoaded', revealOnScroll);
+
+    // Pulse animation for card links
+    document.querySelectorAll('.card-link').forEach(link => {
+      link.addEventListener('mouseenter', function () {
+        this.classList.add('pulse');
+      });
+      link.addEventListener('mouseleave', function () {
+        this.classList.remove('pulse');
+      });
+    });
+
+    // Animate CTA box
+    const ctaBox = document.querySelector('.cta-box');
+    if (ctaBox) {
+      ctaBox.addEventListener('mouseenter', function () {
+        this.classList.add('pulse');
+      });
+      ctaBox.addEventListener('mouseleave', function () {
+        this.classList.remove('pulse');
+      });
+    }
+  </script>
+</body>
+
+</html>

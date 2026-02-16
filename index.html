@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CipherWall: Secure cyber crime reporting portal for India. Report threats, learn about cybersecurity, and protect your digital identity." />
+  <meta name="keywords" content="cyber crime reporting, cybersecurity, India, digital safety, phishing, malware" />
+  <title>CipherWall Portal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    ::selection {
+      background-color: #1f2e4a;
+      color: #fff;
+    }
+
+    .tooltip {
+      opacity: 1 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top px-4">
+    <a class="navbar-brand d-flex align-items-center" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Home of CipherWall">
+      <div class="cyber">🛡️ CipherWall</div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon" viewBox="0 0 16 16">
+        <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm3.295 3.995V11H4.104V5.995h-1.7V5H7v.994H5.295zM8.692 7.01V11H7.633V5.001h1.209l1.71 3.894h.039l1.71-3.894H13.5V11h-1.072V7.01h-.057l-1.42 3.239h-.773L8.75 7.008h-.058z" />
+      </svg>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#" aria-current="page">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="Report.html">Report Incident</a></li>
+        <li class="nav-item"><a class="nav-link" href="fetch_virustotal.php">Threat List</a></li>
+        <li class="nav-item"><a class="nav-link" href="Learn.html">Learn</a></li>
+        <li class="nav-item"><a class="nav-link" href="traking.php">Track report</a></li>
+        <li class="nav-item"><a class="nav-link" href="Login.html">Login</a></li>
+        <li class="nav-item"><a class="nav-link" href="Resgister.html">Sign Up</a></li>
+      </ul>
+      <form class="d-flex ms-3" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search articles..." aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero py-5 text-center bg-gradient text-white hidden">
+    <div class="container">
+      <h1 class="text-center text-info fw-bold mb-4">Welcome to CipherWall</h1>
+      <p class="lead mb-4">Your trusted portal to report cyber threats and protect your identity online.</p>
+      <a href="Report.html" class="btn btn-lg btn-success cta-button" data-bs-toggle="tooltip" data-bs-placement="top" title="Report a cyber incident securely">
+        <i class="bi bi-shield-lock-fill me-2"></i> Report Cyber Threat
+      </a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about-home hidden" id="ab">
+    <h2 class="text-center text-info fw-bold mb-4">Why CipherWall?</h2>
+    <div class="card-grid">
+      <div class="card hidden">
+        <img src="trust1.png" class="card-img-top" alt="Trusted cybercrime reporting interface">
+        <div class="card-body">
+          <h2>🛑 Trusted Cybercrime Reporting</h2>
+          <p>CipherWall ensures users to report cybercrimes directly to authorities through a secure, user-friendly interface.</p>
+          <a href="https://www.cisa.gov/news-events/news/protecting-yourself-phishing" class="card-link">Learn more</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card hidden">
+        <img src="data.png" class="card-img-top" alt="Easy cybercrime reporting">
+        <div class="card-body">
+          <h2>📢 Report Cybercrime Easily</h2>
+          <p>CipherWall offers a user-friendly interface to report online frauds, threats, or harassment in just a few clicks.</p>
+          <a href="Report.html" class="card-link">Report Now</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card hidden">
+        <img src="identity.png" class="card-img-top" alt="Protect your digital identity">
+        <div class="card-body">
+          <h2>🔐 Protect Your Digital Identity</h2>
+          <p>Stay safe online with curated security tips and awareness tools designed for individuals and businesses.</p>
+          <a href="Learn.html" class="card-link">Browse Tips</a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card hidden">
+        <img src="citii.png" class="card-img-top" alt="Designed for citizens">
+        <div class="card-body">
+          <h2>🛡️ Built for citizens</h2>
+          <p>Designed for ease-of-use by individuals,students and professionals-no technical background needed to file a report</p>
+          <a href="mailto:support@cybersecure.in" class="card-link">Contact Us</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="about-home hidden" id="ab1">
+    <h2 class="text-center text-info fw-bold mb-4">How does this works?</h2>
+    <div class="card-grid">
+      <!-- Card 1 -->
+      <div class="card hidden">
+        <img src="unusal.png" class="card-img-top" alt="Detect unusual activity">
+        <div class="card-body">
+          <h2> 1.<i class="bi bi-search text-info fs-3"></i> Detect Unusual Activity</h2>
+          <p>CipherWall begins with you identifying suspicious digital behavior—like fake job offers, unauthorized logins, or malicious links.
+            If something feels off, it probably is. Trust your instinct and take the first step.
+          </p>
+          <a href="#" class="card-link">Learn more</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card hidden">
+        <img src="report.png" class="card-img-top" alt="Fill the report form">
+        <div class="card-body">
+          <h2> 2. <i class="bi bi-file-earmark-text-fill text-warning fs-3"></i>Fill the Report Form</h2>
+          <p>Go to the Report Incident page and fill out the details clearly.
+            Include what happened, when, and how. You can also attach proof like screenshots, links, or emails for better verification.</p>
+          <a href="Report.html" class="card-link">Report Now</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card hidden">
+        <img src="datasec.png" class="card-img-top" alt="Data security assurance">
+        <div class="card-body">
+          <h2> 3. <i class="bi bi-shield-lock text-success fs-3"></i>Your Data Stays Secure</h2>
+          <p>Every submission is end-to-end encrypted and stored in compliance with data protection standards.
+            We never reveal your identity unless legally required. Your anonymity is respected.</p>
+          <a href="Learn.html" class="card-link">Browse Tips</a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card hidden">
+        <img src="cyberauth.png" class="card-img-top" alt="Notification to cyber authorities">
+        <div class="card-body">
+          <h2> 4. <i class="bi bi-broadcast-pin text-danger fs-3"></i>We Notify Cyber Authorities</h2>
+          <p>Once reviewed, your complaint is routed to cybercrime units or digital safety cells.
+            You may receive follow-up instructions, depending on case severity or involvement.
+          </p>
+          <a href="mailto:support@cybersecure.in" class="card-link">Contact Us</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ's section -->
+  <section class="faq-section py-5 hidden">
+    <div class="container">
+      <h2 class="text-center text-info fw-bold mb-4">Frequently Asked Questions(FAQ'S)</h2>
+      <div class="accordion accordion-flush" id="faqAccordion">
+        <!-- FAQ 1 -->
+        <div class="accordion-item bg-dark text-white">
+          <h2 class="accordion-header" id="faqOne">
+            <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne">
+              Is CipherWall a government website?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              CipherWall is an independent initiative that supports India’s Digital Safety Mission and is designed to integrate securely with official cybercrime reporting agencies.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="accordion-item bg-dark text-white">
+          <h2 class="accordion-header" id="faqTwo">
+            <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo">
+              Can I report anonymously?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes, you may report anonymously, but providing accurate contact details increases the chances of effective follow-up and verification.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="accordion-item bg-dark text-white">
+          <h2 class="accordion-header" id="faqThree">
+            <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree">
+              What kind of evidence should I attach?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Screenshots, email headers, URLs, transaction IDs, or any communication proof related to the cybercrime are helpful in investigating the incident.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="accordion-item bg-dark text-white">
+          <h2 class="accordion-header" id="faqFour">
+            <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour">
+              Will I get a response after submitting a report?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes, if your contact details are valid and the complaint is actionable, our team or authorities will contact you within a few working days.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="accordion-item bg-dark text-white">
+          <h2 class="accordion-header" id="faqFive">
+            <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive">
+              How can I identify if a message or email is a phishing attempt?
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Phishing attempts often include suspicious links, urgent language, or requests for sensitive information. Always verify the sender and never click unknown links or download attachments from untrusted sources.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="accordion-item bg-dark text-white">
+          <h2 class="accordion-header" id="faqSix">
+            <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSix">
+              What should I do if I accidentally share my OTP or banking details?
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Immediately contact your bank or financial service provider and report the incident. Also, file a complaint through the CyberSecure portal to initiate appropriate investigation procedures.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="alert alert-warning text-center mb-0 hidden" role="alert">
+    🚨 Latest Alert: Increase in WhatsApp OTP scams reported across India – Stay Alert!
+  </div>
+
+  <!-- Contact -->
+  <section class="contact py-5 hidden">
+    <div class="container text-center">
+      <h2 class="text-center text-info fw-bold mb-4">Get in Touch</h2>
+      <p>Need help? Email us at <a href="mailto:support@cybersecure.in">support@cybersecure.in</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-secondary py-3">
+    <div class="container text-center">
+      &copy; 2025 CipherWall | Designed for India's Digital Safety Mission.
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+
+    document.querySelector('form[role="search"]').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const query = this.querySelector('input[type="search"]').value.toLowerCase();
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        card.style.display = text.includes(query) ? 'block' : 'none';
+      });
+      if (query === '') {
+        cards.forEach(card => card.style.display = 'block');
+      }
+    });
+
+  
+    function revealOnScroll() {
+      const reveals = document.querySelectorAll('.hidden');
+      for (let i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const elementTop = reveals[i].getBoundingClientRect().top;
+        const elementVisible = 120;
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add('show');
+        } else {
+          reveals[i].classList.remove('show');
+        }
+      }
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('DOMContentLoaded', revealOnScroll);
+
+    
+    document.querySelectorAll('.cta-button').forEach(btn => {
+      btn.addEventListener('mouseenter', function () {
+        this.classList.add('pulse');
+      });
+      btn.addEventListener('mouseleave', function () {
+        this.classList.remove('pulse');
+      });
+    });
+  </script>
+</body>
+
+</html>
